@@ -42,7 +42,9 @@ public class Story {
     }
 
     public Page getPage(int pageNumber) {
-
-
-    }
+        if (pageNumber >= pages.length) {
+            pageNumber = 0;
+        }//to not get exception
+        return pages[pageNumber];
+    }//end getPage
 }
