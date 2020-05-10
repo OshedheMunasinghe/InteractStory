@@ -25,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        nameField.setText(""); //no saving name back to start, empty
+    }
+
     //method for start button
     public void buttonPressed(View view) {
         String name = nameField.getText().toString();

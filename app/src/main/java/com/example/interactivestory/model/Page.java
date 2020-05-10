@@ -5,7 +5,7 @@ public class Page {
     private int textID;
     private Choice choice1;
     private Choice choice2;
-    private Boolean isFinalPage = false;
+    private boolean isFinalPage = false;
 
     public Page(int imageID, int textID) {
         this.imageID = imageID;
@@ -13,7 +13,7 @@ public class Page {
         isFinalPage = true;
     }
 
-    public Boolean getFinalPage() {
+    public boolean isFinalPage() {
         return isFinalPage;
     }
 
